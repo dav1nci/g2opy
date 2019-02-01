@@ -104,4 +104,6 @@ RUN cd /opt/g2opy/build && cmake .. && make -j`nproc` && cd .. && python setup.p
 
 RUN cd /opt/g2opy/ && python setup.py install
 
+RUN pip install matplotlib jupyter scikit-image
+
 WORKDIR /
